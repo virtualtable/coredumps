@@ -1,3 +1,4 @@
+//encs
 #define PROTO_MEMBER1_ENC VMValue4
 #define PROTO_MEMBER2_ENC VMValue1
 #define PROTO_DEBUGISN_ENC VMValue2
