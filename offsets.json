@@ -63,7 +63,7 @@
   "CheckParallel_Offset": "0xBECCE0",
   "GetGlobalState_Offset": "0xEBCDC0",
   "EnableLoadModule": "0x596AF38",
-  "SCResume": "0xECD010",
+  "SCResume": "0xF007D0",
   "RequestCode": "0x9E92A0"
 }
 "EXTERNAL": "here",
