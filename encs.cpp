@@ -1,5 +1,5 @@
 //coredumps.xyz
-//version-c2c9efad42eb44e5
+//version-b83d92f2144a48e2
 #pragma once
 
 #define PROTO_MEMBER1_ENC VMValue4
