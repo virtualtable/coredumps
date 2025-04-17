@@ -2,6 +2,11 @@
 "moon": "sigma",
 "signature/site": "coredumps.xyz",
 "RBLXVERSION": "version-b83d92f2144a48e2",
+ "MMAP": "here",
+    "kPageHash": "0x90DD36FED8EA4FF4",
+    "_InsertSet": "0xCEA020",
+    "_WhitelistedPages": "0x2A2F20"
+}
 "INTERNAL": "here",
  {
 "Print": "0x1644C90",
