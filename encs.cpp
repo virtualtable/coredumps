@@ -1,21 +1,26 @@
 //coredumps.xyz
-//version-1e91b4133e334c9c
+//version-c3c1514fd260482e
 #pragma once
 
-#define PROTO_MEMBER1_ENC VMValue4
-#define PROTO_MEMBER2_ENC VMValue1
-#define PROTO_DEBUGISN_ENC VMValue2
-#define PROTO_TYPEINFO_ENC VMValue3
-#define PROTO_DEBUGNAME_ENC VMValue4
-#define LSTATE_STACKSIZE_ENC VMValue2
-#define LSTATE_GLOBAL_ENC VMValue2
-#define CLOSURE_FUNC_ENC VMValue4
-#define CLOSURE_CONT_ENC VMValue2
-#define CLOSURE_DEBUGNAME_ENC VMValue1
-#define TABLE_MEMBER_ENC VMValue4
-#define TABLE_META_ENC VMValue4
-#define UDATA_META_ENC VMValue3
-#define TSTRING_HASH_ENC VMValue1
-#define TSTRING_LEN_ENC VMValue3
-#define GSTATE_TTNAME_ENC VMValue3
-#define GSTATE_TMNAME_ENC VMValue3
+#define PROTO_MEMBER2_ENC vmvalue4
+#define CLOSURE_DEBUGNAME_ENC vmvalue4
+#define TSTRING_HASH_ENC vmvalue4
+
+#define PROTO_DEBUGNAME_ENC vmvalue1
+
+#define CLOSURE_CONT_ENC vmvalue3
+#define PROTO_DEBUGISN_ENC vmvalue3
+#define LSTATE_STACKSIZE_ENC vmvalue3
+
+#define PROTO_TYPEINFO_ENC vmvalue2
+#define UDATA_META_ENC vmvalue2
+//removed encryptions by roblox
+#define PROTO_MEMBER1_ENC vmvalue0
+#define CLOSURF_FUNC_ENC vmvalue0 
+#define TABLE_META_ENC vmvalue0 
+#define TABLE_MEMBER_ENC vmvalue0
+#define LSTATE_GLOBAL_ENC vmvalue0 
+#define TSTRING_LEN_ENC vmvalue0 
+#define GSTATE_TTNAME_ENC vmvalue0
+#define GSTATE_TMNAME_ENC vmvalue0  
+
