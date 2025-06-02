@@ -5,11 +5,18 @@
   "contributors": "https://offsets.ntgetwritewatch.workers.dev/",
  
   "MMAP": "here",
-  "Setinsert": "0xD77510",
-  "Whitelistpages": "0x2A3820",
+  "SetInsert": "0xD77510",
+  "WhitelistPages": "0x2A3820",
   "Bitmap": "0x2855A8",
   "CFG_PAGE_HASH_KEY": "0xAA9F8E1B",
   "CFG_VALIDATION_XOR": "0x27",
+  "BitmapShift": "0x13",
+  "BitfieldShift": "0x10",
+  "BitIndexMask": "0x7",
+  "PageMask": "0xFFFFFFFFFFFFF000",
+  "PageShift": "0xC",
+  "ByteShift": "0x2C",
+  "OffsetSaveCurrent": "0xBBC110"
   "PageHash": "0xAA9F8E1B",
   "PageHash2": "0x27",
 
