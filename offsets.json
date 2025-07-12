@@ -1,226 +1,225 @@
-namespace hyperion {
-    constexpr uintptr_t SetInsert = 0xCBAE30;
-    constexpr uintptr_t BitMap = 0x297908;
-    constexpr uintptr_t ByteHash = 0xD;
-    constexpr uintptr_t PageHash = 0xC9E94648;
-    constexpr uintptr_t PageMask = 0xFFFFFFFFFFFFFFFE;
-    constexpr uintptr_t PageShift = 0xC;
-    constexpr uintptr_t BitmapByteOffset = 0x13;
-    constexpr uintptr_t BitmapBitOffset = 0x10;
-    constexpr uintptr_t WhitelistedPages = 0x29AE70;
-    constexpr uintptr_t WhitelistedMode = 0x7726AF3;
+{
+  "hyperion": {
+    "SetInsert": "0xCBAE30",
+    "BitMap": "0x297908",
+    "ByteHash": "0xD",
+    "PageHash": "0xC9E94648",
+    "PageMask": "0xFFFFFFFFFFFFFFFE",
+    "PageShift": "0xC",
+    "BitmapByteOffset": "0x13",
+    "BitmapBitOffset": "0x10",
+    "WhitelistedPages": "0x29AE70",
+    "WhitelistedMode": "0x7726AF3"
+  },
+  "internal": {
+    "FlogDataBank": "0x644E568",
+    "ScriptContextResume": "0xDE24B0",
+    "AppdataInfo": "0x682B5F8",
+    "OpcodeLookupTable": "0x5159B40",
+    "GetCurrentThreadId": "0x3879620",
+    "Print": "0x14AD380",
+    "TaskDefer": "0xFFA6A0",
+    "RawScheduler": "0x68F3BC8",
+    "TaskSchedulerTargetFps": "0x63FA88C",
+    "GetGlobalState": "0xDD2460",
+    "LuaVMLoad": "0xB61D20",
+    "RequestCode": "0x91C6D0",
+    "Impersonator": "0x3383CA0",
+    "PushInstance": "0xEB0250",
+    "PushInstance2": "0xEB02A0",
+    "Luau_Execute": "0x2685CE0",
+    "LuaD_throw": "0x2653370",
+    "LuaO_NilObject": "0x4740F38",
+    "LuaH_DummyNode": "0x4740958",
+    "KTable": "0x63FA910",
+    "FireMouseClick": "0x1BC75E0",
+    "FireRightMouseClick": "0x1BC7780",
+    "FireMouseHoverEnter": "0x1BC8B80",
+    "FireMouseHoverLeave": "0x1BC8D20",
+    "FireTouchInterest": "0x1DDDF10",
+    "GetIdentityStruct": "0x3879850",
+    "IdentityPtr": "0x6430708",
+    "GetProperty": "0xA757B0",
+    "FireProximityPrompt": "0x1C91A20",
+    "InternalFastFlags_EnableLoadModule": "0x5B44AC8",
+    "InternalFastFlags_DebugCheckRenderThreading": "0x5B6E3D0",
+    "InternalFastFlags_RenderDebugCheckThreading2": "0x5B99730",
+    "InternalFastFlags_DisableCorescriptLoadstring": "0x5B44AA8",
+    "InternalFastFlags_LockViolationInstanceCrash": "0x5B4F670",
+    "InternalFastFlags_LockViolationScriptCrash": "0x5B447E0",
+    "InternalFastFlags_WndProcessCheck": "0x5B33A30",
+    "InternalFastFlags_LuaStepIntervalMsOverrideEnabled": "0x5B47200",
+    "InternalFastFlags_GetFastFlag": "0x38992F0",
+    "InternalFastFlags_SetFastFlag": "0x3899D80",
+    "LuaUserData_GlobalState": "0x140",
+    "LuaUserData_DecryptState": "0x88",
+    "LuaUserData_ScriptContext": "0x3B0",
+    "LuaUserData_ScriptInstance": "0x50",
+    "LuaUserData_DisableRequireLock": "0x7D8",
+    "ReplicateSignal_Register": "0x2647F00",
+    "ReplicateSignal_CastArgs": "0xBEA8F0",
+    "ReplicateSignal_VariantCastInt64": "0x143B8F0",
+    "ReplicateSignal_VariantCastInt": "0x143B5E0",
+    "ReplicateSignal_VariantCastFloat": "0x143BF30"
+  },
+  "external": {
+    "Adornee": "0xD8",
+    "Anchored": "0x2F1",
+    "AnimationId": "0xD8",
+    "AttributeList": "0x138",
+    "AttributeToNext": "0x70",
+    "AttributeToValue": "0x30",
+    "AutoJumpEnabled": "0x1E3",
+    "BeamBrightness": "0x198",
+    "BeamColor": "0x128",
+    "BeamLightEmission": "0x1A4",
+    "BeamLightInfuence": "0x1A8",
+    "Camera": "0x420",
+    "CameraMaxZoomDistance": "0x2D0",
+    "CameraMinZoomDistance": "0x2D4",
+    "CameraMode": "0x2D8",
+    "CameraPos": "0x124",
+    "CameraRotation": "0x100",
+    "CameraSubject": "0xF0",
+    "CameraType": "0x160",
+    "CanCollide": "0x2F3",
+    "CanTouch": "0x2F4",
+    "CharacterAppearanceId": "0x278",
+    "Children": "0x80",
+    "ChildrenEnd": "0x8",
+    "ClassDescriptor": "0x18",
+    "ClassDescriptorToClassName": "0x8",
+    "ClickDetectorMaxActivationDistance": "0x118",
+    "ClockTime": "0x1C0",
+    "CreatorId": "0x190",
+    "DataModelDeleterPointer": "0x682B930",
+    "DataModelPrimitiveCount": "0x410",
+    "DataModelToRenderView1": "0x180",
+    "DataModelToRenderView2": "0x30",
+    "DataModelToRenderView3": "0x268",
+    "DecalTexture": "0x110",
+    "Deleter": "0x10",
+    "DeleterBack": "0x18",
+    "Dimensions": "0x720",
+    "DisplayName": "0x118",
+    "EvaluateStateMachine": "0x1E3",
+    "FOV": "0x168",
+    "FakeDataModelPointer": "0x682B928",
+    "FakeDataModelToDataModel": "0x1B8",
+    "FogColor": "0x104",
+    "FogEnd": "0x13C",
+    "FogStart": "0x140",
+    "ForceNewAFKDuration": "0x1F8",
+    "FramePositionOffsetX": "0x3BC",
+    "FramePositionOffsetY": "0x3C4",
+    "FramePositionX": "0x3B8",
+    "FramePositionY": "0x3C0",
+    "FrameRotation": "0x190",
+    "FrameSizeX": "0x120",
+    "FrameSizeY": "0x124",
+    "GameId": "0x198",
+    "GameLoaded": "0x698",
+    "Gravity": "0x960",
+    "Health": "0x19C",
+    "HealthDisplayDistance": "0x2F8",
+    "HipHeight": "0x1A8",
+    "HumanoidDisplayName": "0xD8",
+    "HumanoidState": "0x870",
+    "HumanoidStateId": "0x20",
+    "InputObject": "0x108",
+    "InsetMaxX": "0x108",
+    "InsetMaxY": "0x10C",
+    "InsetMinX": "0x100",
+    "InsetMinY": "0x104",
+    "InstanceCapabilities": "0x378",
+    "JobEnd": "0x1D8",
+    "JobId": "0x140",
+    "JobStart": "0x1D0",
+    "Job_Name": "0x18",
+    "JobsPointer": "0x68F3DA0",
+    "JumpPower": "0x1B8",
+    "LocalPlayer": "0x128",
+    "LocalScriptByteCode": "0x1B0",
+    "LocalScriptBytecodePointer": "0x10",
+    "LocalScriptHash": "0x1C0",
+    "MaterialType": "0x2D0",
+    "MaxHealth": "0x1BC",
+    "MaxSlopeAngle": "0x1C0",
+    "MeshPartColor3": "0x1A8",
+    "ModelInstance": "0x340",
+    "ModuleScriptByteCode": "0x158",
+    "ModuleScriptBytecodePointer": "0x10",
+    "ModuleScriptHash": "0x180",
+    "MoonTextureId": "0xE0",
+    "MousePosition": "0xF4",
+    "MouseSensitivity": "0x0",
+    "MoveDirection": "0x160",
+    "Name": "0x78",
+    "NameDisplayDistance": "0x304",
+    "NameSize": "0x10",
+    "OnDemandInstance": "0x30",
+    "OutdoorAmbient": "0x110",
+    "Parent": "0x50",
+    "PartSize": "0x290",
+    "Ping": "0xD0",
+    "PlaceId": "0x1A0",
+    "PlayerConfigurerPointer": "0x680A5C0",
+    "PlayerMouse": "0xC00",
+    "Position": "0x13C",
+    "Primitive": "0x178",
+    "PrimitiveGravity": "0x110",
+    "PrimitiveValidateValue": "0x6",
+    "PrimitivesPointer1": "0x3A8",
+    "PrimitivesPointer2": "0x210",
+    "ProximityPromptActionText": "0xD8",
+    "ProximityPromptEnabled": "0x14A",
+    "ProximityPromptGamepadKeyCode": "0x134",
+    "ProximityPromptHoldDuraction": "0x138",
+    "ProximityPromptMaxActivationDistance": "0x140",
+    "ProximityPromptMaxObjectText": "0xF8",
+    "RenderJobToDataModel": "0x1A8",
+    "RenderJobToFakeDataModel": "0x38",
+    "RenderJobToRenderView": "0x218",
+    "RequireBypass": "0x7D8",
+    "RigType": "0x1D0",
+    "Rotation": "0x120",
+    "RunContext": "0x150",
+    "ScriptContext": "0x3B0",
+    "Sit": "0x1E3",
+    "SkyboxBk": "0x108",
+    "SkyboxDn": "0x130",
+    "SkyboxFt": "0x158",
+    "SkyboxLf": "0x180",
+    "SkyboxRt": "0x1A8",
+    "SkyboxUp": "0x1D0",
+    "SoundId": "0xE0",
+    "StarCount": "0x228",
+    "StringLength": "0x10",
+    "SunTextureId": "0x1F8",
+    "TagList": "0x120",
+    "TaskSchedulerMaxFPS": "0x1B0",
+    "TaskSchedulerPointer": "0x68F3BC8",
+    "Team": "0x268",
+    "TeamColor": "0xD8",
+    "Tool_Grip_Position": "0x454",
+    "Transparency": "0xF8",
+    "UserId": "0x288",
+    "Value": "0xD8",
+    "Velocity": "0x148",
+    "ViewportSize": "0x300",
+    "VisualEngine": "0x10",
+    "VisualEnginePointer": "0x66712A8",
+    "VisualEngineToDataModel1": "0x700",
+    "VisualEngineToDataModel2": "0x1B8",
+    "WalkSpeed": "0x1DC",
+    "WalkSpeedCheck": "0x3B8",
+    "WhitelistEncryption": "0xC9E94648",
+    "WhitelistEncryption2": "0xD",
+    "WhitelistSetInsert": "0xCBAE30",
+    "WhitelistedPages": "0x29AE70",
+    "WhitelistedThreads": "0x29AE60",
+    "Workspace": "0x180",
+    "WorkspaceToWorld": "0x3A8",
+    "viewmatrix": "0x4B0"
+  }
 }
-
-namespace internal {
-    constexpr uintptr_t FlogDataBank = 0x644E568;
-    constexpr uintptr_t ScriptContextResume = 0xDE24B0;
-    constexpr uintptr_t AppdataInfo = 0x682B5F8;
-    constexpr uintptr_t OpcodeLookupTable = 0x5159B40;
-    constexpr uintptr_t GetCurrentThreadId = 0x3879620;
-    constexpr uintptr_t Print = 0x14AD380;
-    constexpr uintptr_t TaskDefer = 0xFFA6A0;
-    constexpr uintptr_t RawScheduler = 0x68F3BC8;
-    constexpr uintptr_t TaskSchedulerTargetFps = 0x63FA88C;
-    constexpr uintptr_t GetGlobalState = 0xDD2460;
-    constexpr uintptr_t LuaVMLoad = 0xB61D20;
-    constexpr uintptr_t RequestCode = 0x91C6D0;
-    constexpr uintptr_t Impersonator = 0x3383CA0;
-    constexpr uintptr_t PushInstance = 0xEB0250;
-    constexpr uintptr_t PushInstance2 = 0xEB02A0;
-    constexpr uintptr_t Luau_Execute = 0x2685CE0;
-    constexpr uintptr_t LuaD_throw = 0x2653370;
-    constexpr uintptr_t LuaO_NilObject = 0x4740F38;
-    constexpr uintptr_t LuaH_DummyNode = 0x4740958;
-    constexpr uintptr_t KTable = 0x63FA910;
-    constexpr uintptr_t FireMouseClick = 0x1BC75E0;
-    constexpr uintptr_t FireRightMouseClick = 0x1BC7780;
-    constexpr uintptr_t FireMouseHoverEnter = 0x1BC8B80;
-    constexpr uintptr_t FireMouseHoverLeave = 0x1BC8D20;
-    constexpr uintptr_t FireTouchInterest = 0x1DDDF10;
-    constexpr uintptr_t GetIdentityStruct = 0x3879850;
-    constexpr uintptr_t IdentityPtr = 0x6430708;
-    constexpr uintptr_t GetProperty = 0xA757B0;
-    constexpr uintptr_t FireProximityPrompt = 0x1C91A20;
-    constexpr uintptr_t InternalFastFlags_EnableLoadModule = 0x5B44AC8;
-    constexpr uintptr_t InternalFastFlags_DebugCheckRenderThreading = 0x5B6E3D0;
-    constexpr uintptr_t InternalFastFlags_RenderDebugCheckThreading2 = 0x5B99730;
-    constexpr uintptr_t InternalFastFlags_DisableCorescriptLoadstring = 0x5B44AA8;
-    constexpr uintptr_t InternalFastFlags_LockViolationInstanceCrash = 0x5B4F670;
-    constexpr uintptr_t InternalFastFlags_LockViolationScriptCrash = 0x5B447E0;
-    constexpr uintptr_t InternalFastFlags_WndProcessCheck = 0x5B33A30;
-    constexpr uintptr_t InternalFastFlags_LuaStepIntervalMsOverrideEnabled = 0x5B47200;
-    constexpr uintptr_t InternalFastFlags_GetFastFlag = 0x38992F0;
-    constexpr uintptr_t InternalFastFlags_SetFastFlag = 0x3899D80;
-    constexpr uintptr_t LuaUserData_GlobalState = 0x140;
-    constexpr uintptr_t LuaUserData_DecryptState = 0x88;
-    constexpr uintptr_t LuaUserData_ScriptContext = 0x3B0;
-    constexpr uintptr_t LuaUserData_ScriptInstance = 0x50;
-    constexpr uintptr_t LuaUserData_DisableRequireLock = 0x7D8;
-    constexpr uintptr_t ReplicateSignal_Register = 0x2647F00;
-    constexpr uintptr_t ReplicateSignal_CastArgs = 0xBEA8F0;
-    constexpr uintptr_t ReplicateSignal_VariantCastInt64 = 0x143B8F0;
-    constexpr uintptr_t ReplicateSignal_VariantCastInt = 0x143B5E0;
-    constexpr uintptr_t ReplicateSignal_VariantCastFloat = 0x143BF30;
-}
-
-namespace external {
-    inline constexpr uintptr_t Adornee = 0xD8;
-    inline constexpr uintptr_t Anchored = 0x2F1;
-    inline constexpr uintptr_t AnimationId = 0xD8;
-    inline constexpr uintptr_t AttributeList = 0x138;
-    inline constexpr uintptr_t AttributeToNext = 0x70;
-    inline constexpr uintptr_t AttributeToValue = 0x30;
-    inline constexpr uintptr_t AutoJumpEnabled = 0x1E3;
-    inline constexpr uintptr_t BeamBrightness = 0x198;
-    inline constexpr uintptr_t BeamColor = 0x128;
-    inline constexpr uintptr_t BeamLightEmission = 0x1A4;
-    inline constexpr uintptr_t BeamLightInfuence = 0x1A8;
-    inline constexpr uintptr_t Camera = 0x420;
-    inline constexpr uintptr_t CameraMaxZoomDistance = 0x2D0;
-    inline constexpr uintptr_t CameraMinZoomDistance = 0x2D4;
-    inline constexpr uintptr_t CameraMode = 0x2D8;
-    inline constexpr uintptr_t CameraPos = 0x124;
-    inline constexpr uintptr_t CameraRotation = 0x100;
-    inline constexpr uintptr_t CameraSubject = 0xF0;
-    inline constexpr uintptr_t CameraType = 0x160;
-    inline constexpr uintptr_t CanCollide = 0x2F3;
-    inline constexpr uintptr_t CanTouch = 0x2F4;
-    inline constexpr uintptr_t CharacterAppearanceId = 0x278;
-    inline constexpr uintptr_t Children = 0x80;
-    inline constexpr uintptr_t ChildrenEnd = 0x8;
-    inline constexpr uintptr_t ClassDescriptor = 0x18;
-    inline constexpr uintptr_t ClassDescriptorToClassName = 0x8;
-    inline constexpr uintptr_t ClickDetectorMaxActivationDistance = 0x118;
-    inline constexpr uintptr_t ClockTime = 0x1C0;
-    inline constexpr uintptr_t CreatorId = 0x190;
-    inline constexpr uintptr_t DataModelDeleterPointer = 0x682B930;
-    inline constexpr uintptr_t DataModelPrimitiveCount = 0x410;
-    inline constexpr uintptr_t DataModelToRenderView1 = 0x180;
-    inline constexpr uintptr_t DataModelToRenderView2 = 0x30;
-    inline constexpr uintptr_t DataModelToRenderView3 = 0x268;
-    inline constexpr uintptr_t DecalTexture = 0x110;
-    inline constexpr uintptr_t Deleter = 0x10;
-    inline constexpr uintptr_t DeleterBack = 0x18;
-    inline constexpr uintptr_t Dimensions = 0x720;
-    inline constexpr uintptr_t DisplayName = 0x118;
-    inline constexpr uintptr_t EvaluateStateMachine = 0x1E3;
-    inline constexpr uintptr_t FOV = 0x168;
-    inline constexpr uintptr_t FakeDataModelPointer = 0x682B928;
-    inline constexpr uintptr_t FakeDataModelToDataModel = 0x1B8;
-    inline constexpr uintptr_t FogColor = 0x104;
-    inline constexpr uintptr_t FogEnd = 0x13C;
-    inline constexpr uintptr_t FogStart = 0x140;
-    inline constexpr uintptr_t ForceNewAFKDuration = 0x1F8;
-    inline constexpr uintptr_t FramePositionOffsetX  = 0x3BC;
-    inline constexpr uintptr_t FramePositionOffsetY = 0x3C4;
-    inline constexpr uintptr_t FramePositionX = 0x3B8;
-    inline constexpr uintptr_t FramePositionY = 0x3C0;
-    inline constexpr uintptr_t FrameRotation = 0x190;
-    inline constexpr uintptr_t FrameSizeX = 0x120;
-    inline constexpr uintptr_t FrameSizeY = 0x124;
-    inline constexpr uintptr_t GameId = 0x198;
-    inline constexpr uintptr_t GameLoaded = 0x698;
-    inline constexpr uintptr_t Gravity = 0x960;
-    inline constexpr uintptr_t Health = 0x19C;
-    inline constexpr uintptr_t HealthDisplayDistance = 0x2F8;
-    inline constexpr uintptr_t HipHeight = 0x1A8;
-    inline constexpr uintptr_t HumanoidDisplayName = 0xD8;
-    inline constexpr uintptr_t HumanoidState = 0x870;
-    inline constexpr uintptr_t HumanoidStateId = 0x20;
-    inline constexpr uintptr_t InputObject = 0x108;
-    inline constexpr uintptr_t InsetMaxX = 0x108;
-    inline constexpr uintptr_t InsetMaxY = 0x10C;
-    inline constexpr uintptr_t InsetMinX = 0x100;
-    inline constexpr uintptr_t InsetMinY = 0x104;
-    inline constexpr uintptr_t InstanceCapabilities = 0x378;
-    inline constexpr uintptr_t JobEnd = 0x1D8;
-    inline constexpr uintptr_t JobId = 0x140;
-    inline constexpr uintptr_t JobStart = 0x1D0;
-    inline constexpr uintptr_t Job_Name = 0x18;
-    inline constexpr uintptr_t JobsPointer = 0x68F3DA0;
-    inline constexpr uintptr_t JumpPower = 0x1B8;
-    inline constexpr uintptr_t LocalPlayer = 0x128;
-    inline constexpr uintptr_t LocalScriptByteCode = 0x1B0;
-    inline constexpr uintptr_t LocalScriptBytecodePointer = 0x10;
-    inline constexpr uintptr_t LocalScriptHash = 0x1C0;
-    inline constexpr uintptr_t MaterialType = 0x2D0;
-    inline constexpr uintptr_t MaxHealth = 0x1BC;
-    inline constexpr uintptr_t MaxSlopeAngle = 0x1C0;
-    inline constexpr uintptr_t MeshPartColor3 = 0x1A8;
-    inline constexpr uintptr_t ModelInstance = 0x340;
-    inline constexpr uintptr_t ModuleScriptByteCode = 0x158;
-    inline constexpr uintptr_t ModuleScriptBytecodePointer = 0x10;
-    inline constexpr uintptr_t ModuleScriptHash = 0x180;
-    inline constexpr uintptr_t MoonTextureId = 0xE0;
-    inline constexpr uintptr_t MousePosition = 0xF4;
-    inline constexpr uintptr_t MouseSensitivity = 0x0;
-    inline constexpr uintptr_t MoveDirection = 0x160;
-    inline constexpr uintptr_t Name = 0x78;
-    inline constexpr uintptr_t NameDisplayDistance = 0x304;
-    inline constexpr uintptr_t NameSize = 0x10;
-    inline constexpr uintptr_t OnDemandInstance = 0x30;
-    inline constexpr uintptr_t OutdoorAmbient = 0x110;
-    inline constexpr uintptr_t Parent = 0x50;
-    inline constexpr uintptr_t PartSize = 0x290;
-    inline constexpr uintptr_t Ping = 0xD0;
-    inline constexpr uintptr_t PlaceId = 0x1A0;
-    inline constexpr uintptr_t PlayerConfigurerPointer = 0x680A5C0;
-    inline constexpr uintptr_t PlayerMouse = 0xC00;
-    inline constexpr uintptr_t Position = 0x13C;
-    inline constexpr uintptr_t Primitive = 0x178;
-    inline constexpr uintptr_t PrimitiveGravity = 0x110;
-    inline constexpr uintptr_t PrimitiveValidateValue = 0x6;
-    inline constexpr uintptr_t PrimitivesPointer1 = 0x3A8;
-    inline constexpr uintptr_t PrimitivesPointer2 = 0x210;
-    inline constexpr uintptr_t ProximityPromptActionText = 0xD8;
-    inline constexpr uintptr_t ProximityPromptEnabled = 0x14A;
-    inline constexpr uintptr_t ProximityPromptGamepadKeyCode = 0x134;
-    inline constexpr uintptr_t ProximityPromptHoldDuraction = 0x138;
-    inline constexpr uintptr_t ProximityPromptMaxActivationDistance = 0x140;
-    inline constexpr uintptr_t ProximityPromptMaxObjectText = 0xF8;
-    inline constexpr uintptr_t RenderJobToDataModel = 0x1A8;
-    inline constexpr uintptr_t RenderJobToFakeDataModel = 0x38;
-    inline constexpr uintptr_t RenderJobToRenderView = 0x218;
-    inline constexpr uintptr_t RequireBypass = 0x7D8;
-    inline constexpr uintptr_t RigType = 0x1D0;
-    inline constexpr uintptr_t Rotation = 0x120;
-    inline constexpr uintptr_t RunContext = 0x150;
-    inline constexpr uintptr_t ScriptContext = 0x3B0;
-    inline constexpr uintptr_t Sit = 0x1E3;
-    inline constexpr uintptr_t SkyboxBk = 0x108;
-    inline constexpr uintptr_t SkyboxDn = 0x130;
-    inline constexpr uintptr_t SkyboxFt = 0x158;
-    inline constexpr uintptr_t SkyboxLf = 0x180;
-    inline constexpr uintptr_t SkyboxRt = 0x1A8;
-    inline constexpr uintptr_t SkyboxUp = 0x1D0;
-    inline constexpr uintptr_t SoundId = 0xE0;
-    inline constexpr uintptr_t StarCount = 0x228;
-    inline constexpr uintptr_t StringLength = 0x10;
-    inline constexpr uintptr_t SunTextureId = 0x1F8;
-    inline constexpr uintptr_t TagList = 0x120;
-    inline constexpr uintptr_t TaskSchedulerMaxFPS = 0x1B0;
-    inline constexpr uintptr_t TaskSchedulerPointer = 0x68F3BC8;
-    inline constexpr uintptr_t Team = 0x268;
-    inline constexpr uintptr_t TeamColor = 0xD8;
-    inline constexpr uintptr_t Tool_Grip_Position = 0x454;
-    inline constexpr uintptr_t Transparency = 0xF8;
-    inline constexpr uintptr_t UserId = 0x288;
-    inline constexpr uintptr_t Value = 0xD8;
-    inline constexpr uintptr_t Velocity = 0x148;
-    inline constexpr uintptr_t ViewportSize = 0x300;
-    inline constexpr uintptr_t VisualEngine = 0x10;
-    inline constexpr uintptr_t VisualEnginePointer = 0x66712A8;
-    inline constexpr uintptr_t VisualEngineToDataModel1 = 0x700;
-    inline constexpr uintptr_t VisualEngineToDataModel2 = 0x1B8;
-    inline constexpr uintptr_t WalkSpeed = 0x1DC;
-    inline constexpr uintptr_t WalkSpeedCheck = 0x3B8;
-    inline constexpr uintptr_t WhitelistEncryption = 0xC9E94648;
-    inline constexpr uintptr_t WhitelistEncryption2 = 0xD;
-    inline constexpr uintptr_t WhitelistSetInsert = 0xCBAE30;
-    inline constexpr uintptr_t WhitelistedPages = 0x29AE70;
-    inline constexpr uintptr_t WhitelistedThreads = 0x29AE60;
-    inline constexpr uintptr_t Workspace = 0x180;
-    inline constexpr uintptr_t WorkspaceToWorld = 0x3A8;
-    inline constexpr uintptr_t viewmatrix = 0x4B0;
-}
-
